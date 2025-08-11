@@ -62,8 +62,6 @@ jobs:
       env:
         connectedAppId: ${{ secrets.connected_app_id }}
         connectedAppSecret: ${{ secrets.connected_app_secret }}
-        nexusUsername: ${{ secrets.nexus_username }}
-        nexusPassword: ${{ secrets.nexus_password }}
       run: |
         if [ "${{ inputs.environment }}" == "DEV" ];
         then
